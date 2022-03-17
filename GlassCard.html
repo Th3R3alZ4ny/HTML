@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Card</title>
+    <link rel="stylesheet" href="GlassCard.css">
+</head>
+
+<body>
+    <div class="barraDiNavigazione">
+        <ul>
+            <li class="list active"><span class="icon"></span><a href="#"></a></li>
+            <li class="list"><a href="#"></a></li>
+            <li class="list"><a href="#"></a></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+        </ul>
+        <div class="indicatore"></div>
+    </div>
+    
+    <div class="container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Uno</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Due</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Tre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Quattro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Cinque</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Carta Sei</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae eaque omnis
+                    exercitationem molestiae iusto veritatis incidunt debitis consectetur. Officia incidunt nemo harum
+                    laborum itaque impedit alias unde facere.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const list=document.querySelectorAll('.list');
+    function activelink(){
+        list.forEach((item) => item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) => item.addEventListener('click',activelink));
+
+</script>
+
+</html>
